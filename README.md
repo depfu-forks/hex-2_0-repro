@@ -2,7 +2,7 @@
 
 ## What's in here
 
-- A relatively complex set of deps in `mix.exs` with a couple of pinned dependencies. This is the way Depfu ensures that on an update we get exactly the versions we want to upgrade to. This is likely in many cases to produce incompatible sets of pinned dependencies and this `mix.exs` is an example. It pins `ranch` to `2.1.0` which is incompatible with `bypass` which requests `~> 1.3.0`.
+- A set of deps in `mix.exs` with a couple of pinned dependencies. This is the way Depfu ensures that on an update we get exactly the versions we want to upgrade to. This is likely in many cases to produce incompatible sets of pinned dependencies and this `mix.exs` is an example. It pins `ranch` to `2.1.0` which is incompatible with `bypass` which requests `~> 1.3.0`.
 - A `mix.lock` that is currently not in sync with the `mix.exs`
 
 ## Reproing the bug
